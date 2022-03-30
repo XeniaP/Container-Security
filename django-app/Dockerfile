@@ -22,10 +22,10 @@ RUN apk update && apk add --no-cache --upgrade bash build-base libffi-dev
 RUN ["/reset_db.sh"]
 
 # Add Cloud One Application Security
-RUN pip install trend_app_protect
-ENV TREND_AP_LOG_FILE=STDERR
-ENV TREND_AP_KEY=e50635a3-7ca1-4d2e-8d74-dd11c6d43bf3
-ENV TREND_AP_SECRET=e6b041d0-e150-4c4c-b570-e80edde40e45
+#RUN pip install trend_app_protect
+#ENV TREND_AP_LOG_FILE=STDERR
+#ENV TREND_AP_KEY=e50635a3-7ca1-4d2e-8d74-dd11c6d43bf3
+#ENV TREND_AP_SECRET=e6b041d0-e150-4c4c-b570-e80edde40e45
 
 # Expose ports to internet
 EXPOSE 8000
